@@ -7,10 +7,10 @@ var lastid = "";
 window.addEventListener("resize", function() {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     height = (window.innerHeight > 0) ? window.innerHeight : screen.Height;
-    create(height/50, width/50);
+    create(height/45, width/45);
 });
 
-create(height/50, width/50);
+create(height/45, width/45);
 
 function update() {
     var animbtns = document.querySelectorAll(".animbtn");
