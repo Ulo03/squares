@@ -59,8 +59,6 @@ document.addEventListener("mousedown", function() {
     mdown = true;
 });
 
-
-
 document.addEventListener("mouseup", function() {
     mdown = false;
 });
