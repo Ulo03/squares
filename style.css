@@ -1,0 +1,105 @@
+body {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: -1;
+}
+
+.animbtn {
+  z-index: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: rgba(94, 96, 206, 0.3);
+  margin-left: 0.25rem;
+  margin-bottom: 0.25rem;
+  outline: none;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+}
+
+.animbtn:focus {
+  border: none;
+  outline: none;
+}
+
+.anim {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.anim.active {
+  -webkit-animation: merge .6s;
+          animation: merge .6s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: #5e60ce;
+}
+
+@-webkit-keyframes merge {
+  0% {
+    background: #48bfe3;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    background: #5e60ce;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes merge {
+  0% {
+    background: #48bfe3;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    background: #5e60ce;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

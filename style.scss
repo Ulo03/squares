@@ -1,0 +1,70 @@
+$size: 2.5rem;
+
+body {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.buttons {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.group {
+	display: flex;
+	flex-direction: row;
+	z-index: -1;
+}
+
+.animbtn {
+	z-index: 10;
+	user-select: none;
+	background: rgba(94,96,206, 0.3);
+	margin-left: 0.25rem;
+	margin-bottom: 0.25rem;
+	outline: none;
+	min-width:$size;
+	min-height:$size; 
+	max-width: $size;
+	max-height: $size;
+
+	&:focus {
+		border: none;
+		outline: none;
+	}
+	
+}
+
+.anim {
+	transform: scale(0);
+	position: absolute;
+	width:$size;
+	height:$size;
+	transition-duration: 0.4s;
+
+	&.active {
+
+		animation: merge .6s;
+
+		transform: scale(1);
+		background: #5e60ce;
+	}
+}
+
+@keyframes merge {
+	0% {
+		background: #48bfe3;
+		transform: scale(0.3);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		background: #5e60ce;
+		transform: scale(1);
+	}
+}
