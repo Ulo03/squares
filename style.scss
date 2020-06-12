@@ -59,12 +59,18 @@ body {
 	0% {
 		background: #48bfe3;
 		transform: scale(0.3);
+		clip-path: circle(10% at 50% 50%);
+	}
+	30% {
+		clip-path: circle(50% at 50% 50%);
 	}
 	50% {
 		transform: scale(1.1);
+		clip-path: circle(70% at 50% 50%);
 	}
 	100% {
 		background: #5e60ce;
 		transform: scale(1);
+		clip-path: circle(100% at 50% 50%);
 	}
 }

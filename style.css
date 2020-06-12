@@ -74,15 +74,25 @@ body {
     background: #48bfe3;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
+    -webkit-clip-path: circle(10% at 50% 50%);
+            clip-path: circle(10% at 50% 50%);
+  }
+  30% {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
   }
   50% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    -webkit-clip-path: circle(70% at 50% 50%);
+            clip-path: circle(70% at 50% 50%);
   }
   100% {
     background: #5e60ce;
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
   }
 }
 
@@ -91,15 +101,25 @@ body {
     background: #48bfe3;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
+    -webkit-clip-path: circle(10% at 50% 50%);
+            clip-path: circle(10% at 50% 50%);
+  }
+  30% {
+    -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
   }
   50% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    -webkit-clip-path: circle(70% at 50% 50%);
+            clip-path: circle(70% at 50% 50%);
   }
   100% {
     background: #5e60ce;
     -webkit-transform: scale(1);
             transform: scale(1);
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
   }
 }
 /*# sourceMappingURL=style.css.map */
